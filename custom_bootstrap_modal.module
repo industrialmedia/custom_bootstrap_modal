@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Contains custom_bootstrap_modal.module.
+ */
+
+
+function custom_bootstrap_modal_page_attachments(array &$attachments) {
+  if (\Drupal::service('router.admin_context')->isAdminRoute() === FALSE) {
+    $attachments['#attached']['library'][] = 'custom_bootstrap_modal/custom_bootstrap_modal.lib';
+    $attachments['#attached']['library'][] = 'custom_bootstrap_modal/custom_bootstrap_modal.dialog.ajax';
+  }
+}

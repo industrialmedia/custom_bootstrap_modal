@@ -1,0 +1,5 @@
+name: 'Custom bootstrap modal'
+type: module
+description: 'IndustrialMedia additional functional'
+core: 8.x
+package: 'Custom'

@@ -1,0 +1,18 @@
+custom_bootstrap_modal.lib:
+  version: VERSION
+  css:
+    theme:
+      lib/css/bootstrap.min.css: {}
+  js:
+    lib/js/bootstrap.min.js: {}
+
+custom_bootstrap_modal.dialog.ajax:
+  version: VERSION
+  js:
+    js/custom_bootstrap_modal.ajax.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.ajax
+    - webform/libraries.jquery.intl-tel-input

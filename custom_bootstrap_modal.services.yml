@@ -1,0 +1,6 @@
+services:
+  main_content_renderer.custom_bootstrap_modal:
+    class: Drupal\custom_bootstrap_modal\Render\MainContent\CustomBootstrapModalRenderer
+    arguments: ['@title_resolver']
+    tags:
+      - { name: render.main_content_renderer, format: drupal_custom_bootstrap_modal }
